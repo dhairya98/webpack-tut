@@ -1,4 +1,5 @@
 const path = require("path");
+const Htmlplugin = require("html-webpack-plugin");
 
 module.exports = {
 	// Entry and output
@@ -15,6 +16,20 @@ module.exports = {
 		assetModuleFilename: "assets/[hash][ext]",
 		clean: true,
 	},
+
+	// Plugin
+	plugins: [
+		new Htmlplugin({
+			template: "./index.html",
+			chunks: ["index"],
+			filename: "index.html",
+		}),
+		new Htmlplugin({
+			template: "./newtest.html",
+			chunks: ["newIndex"],
+			filename: "newIndex.html",
+		}),
+	],
 
 	// Loaders
 	module: {
