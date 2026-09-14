@@ -1,11 +1,3 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -16,7 +8,28 @@
   \***********************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./sum.js\");\n/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.scss */ \"./style/style.scss\");\n/* harmony import */ var _fonts_OpenSans_Italic_VariableFont_wdth_wght_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf */ \"./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf\");\n/* harmony import */ var _product__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product */ \"./product.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\ndocument.getElementById(\"btn\").addEventListener(\"click\", () => {\n\tconst result = (0,_product__WEBPACK_IMPORTED_MODULE_3__.product)(3, 3);\n\tconst newResult = (0,_sum__WEBPACK_IMPORTED_MODULE_0__.sum)(3, 2);\n\tdocument.getElementById(\"result\").innerHTML = `The product is: ${result}`;\n});\n\n\n//# sourceURL=webpack://webpack-tut/./index-copy.js?\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ "./sum.js");
+/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.scss */ "./style/style.scss");
+/* harmony import */ var _fonts_OpenSans_Italic_VariableFont_wdth_wght_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf */ "./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+/* harmony import */ var _product__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product */ "./product.js");
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+document.getElementById("btn").addEventListener("click", () => {
+	const result = (0,_product__WEBPACK_IMPORTED_MODULE_3__.product)(3, 3);
+	const newResult = (0,_sum__WEBPACK_IMPORTED_MODULE_0__.sum)(3, 2);
+	document.getElementById("result").innerHTML = `The product is: ${result}`;
+});
+
 
 /***/ },
 
@@ -26,7 +39,14 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _su
   \********************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   product: () => (/* binding */ product)\n/* harmony export */ });\nconst product = (a, b) => {\n\treturn a * b;\n};\n\n\n//# sourceURL=webpack://webpack-tut/./product.js?\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   product: () => (/* binding */ product)
+/* harmony export */ });
+const product = (a, b) => {
+	return a * b;
+};
+
 
 /***/ }
 

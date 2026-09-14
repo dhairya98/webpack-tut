@@ -28,6 +28,8 @@ module.exports = {
 		hot: true,
 	},
 
+	devtool: false,
+
 	optimization: {
 		splitChunks: {
 			chunks: "all",
@@ -37,7 +39,7 @@ module.exports = {
 
 	// Plugin
 	plugins: [
-		new BundleAnalyzerPlugin(),
+		// new BundleAnalyzerPlugin(),
 		new Htmlplugin({
 			template: "./index.html",
 			chunks: ["index"],

@@ -1,11 +1,3 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -16,7 +8,26 @@
   \******************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./sum.js\");\n/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.scss */ \"./style/style.scss\");\n/* harmony import */ var _style_style_copy_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/style-copy.scss */ \"./style/style-copy.scss\");\n/* harmony import */ var _fonts_OpenSans_Italic_VariableFont_wdth_wght_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf */ \"./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n\ndocument.getElementById(\"btn\").addEventListener(\"click\", () => {\n\tconst unusedVariable = \"55555\";\n\tconst result = (0,_sum__WEBPACK_IMPORTED_MODULE_0__.sum)(2, 3);\n\tdocument.getElementById(\"result\").innerHTML = `The sum is: ${result}`;\n});\n\n\n//# sourceURL=webpack://webpack-tut/./index.js?\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ "./sum.js");
+/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.scss */ "./style/style.scss");
+/* harmony import */ var _style_style_copy_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/style-copy.scss */ "./style/style-copy.scss");
+/* harmony import */ var _fonts_OpenSans_Italic_VariableFont_wdth_wght_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf */ "./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+
+document.getElementById("btn").addEventListener("click", () => {
+	const unusedVariable = "55555";
+	const result = (0,_sum__WEBPACK_IMPORTED_MODULE_0__.sum)(2, 3);
+	document.getElementById("result").innerHTML = `The sum is: ${result}`;
+});
+
 
 /***/ },
 
@@ -26,7 +37,9 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _su
   \*******************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-tut/./style/style-copy.scss?\n}");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }
 
