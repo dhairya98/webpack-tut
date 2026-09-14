@@ -25,10 +25,13 @@
 		"sass-loader": "^17.0.1",
 		"style-loader": "^4.0.0",
 		"webpack": "^5.110.3",
+		"webpack-bundle-analyzer": "^5.3.3",
 		"webpack-cli": "^7.2.3",
 		"webpack-dev-server": "^6.0.0"
 	},
 	"dependencies": {
+		"dayjs": "^1.11.23",
+		"lodash": "^4.18.1",
 		"path": "^0.12.7",
 		"sass": "^1.104.1"
 	}

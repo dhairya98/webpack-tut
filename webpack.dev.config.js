@@ -3,6 +3,7 @@ const Htmlplugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CSSMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = {
 	// Entry and output
@@ -28,11 +29,15 @@ module.exports = {
 	},
 
 	optimization: {
-		minimizer: [new CSSMinimizerPlugin()],
+		splitChunks: {
+			chunks: "all",
+			minSize: 0,
+		},
 	},
 
 	// Plugin
 	plugins: [
+		new BundleAnalyzerPlugin(),
 		new Htmlplugin({
 			template: "./index.html",
 			chunks: ["index"],
