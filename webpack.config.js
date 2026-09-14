@@ -1,9 +1,15 @@
 const path = require("path");
 
 module.exports = {
-	entry: "./index.js",
+	entry: {
+		index: "./index.js",
+		newIndex: {
+			import: "./index-copy.js",
+			filename: "newIndexCustom.bundle.js",
+		},
+	},
 	output: {
-		filename: "bundle.js",
+		filename: "[name].bundle.js",
 		path: path.resolve(__dirname, "dist"),
 		assetModuleFilename: "assets/[hash][ext]",
 		clean: true,
