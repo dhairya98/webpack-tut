@@ -1,6 +1,7 @@
 const path = require("path");
 const Htmlplugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 	// Entry and output
@@ -38,6 +39,9 @@ module.exports = {
 				},
 			],
 		}),
+		new MiniCssExtractPlugin({
+			filename: "[name][contenthash].css",
+		}),
 	],
 
 	// Loaders
@@ -49,11 +53,11 @@ module.exports = {
 			},
 			{
 				test: /\.(css)$/,
-				use: ["style-loader", "css-loader"],
+				use: [MiniCssExtractPlugin.loader, "css-loader"],
 			},
 			{
 				test: /\.(scss)$/,
-				use: ["style-loader", "css-loader", "sass-loader"],
+				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
 			},
 			{
 				test: /\.(ttf)$/i,
