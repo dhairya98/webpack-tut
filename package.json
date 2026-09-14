@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"homepage": "https://github.io",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack",
@@ -10,7 +11,9 @@
 		"build:prod": "webpack --config webpack.prod.config.js",
 		"start": "webpack serve --open",
 		"start:dev": "webpack serve --config webpack.dev.config.js --open",
-		"start:prod": "webpack serve --config webpack.prod.config.js --open"
+		"start:prod": "webpack serve --config webpack.prod.config.js --open",
+		"predeploy": "npm run build:prod",
+		"deploy": "gh-pages -d dist"
 	},
 	"author": "Dhairya Anchal",
 	"license": "ISC",
