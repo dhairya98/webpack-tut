@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+	// Entry and output
 	entry: {
 		index: "./index.js",
 		newIndex: {
@@ -14,6 +15,8 @@ module.exports = {
 		assetModuleFilename: "assets/[hash][ext]",
 		clean: true,
 	},
+
+	// Loaders
 	module: {
 		rules: [
 			{
