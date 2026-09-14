@@ -5,5 +5,15 @@ module.exports = {
 	output: {
 		filename: "bundle.js",
 		path: path.resolve(__dirname, "dist"),
+		assetModuleFilename: "assets/[hash][ext]",
+		clean: true,
+	},
+	module: {
+		rules: [
+			{
+				test: /\.(png|jpg|jpeg|gif|webp|avif)$/i,
+				type: "asset/resource",
+			},
+		],
 	},
 };
