@@ -1,0 +1,21 @@
+{
+	"name": "webpack-tut",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack",
+		"build:dev": "webpack --mode development",
+		"build:prod": "webpack --mode production"
+	},
+	"author": "Dhairya Anchal",
+	"license": "ISC",
+	"devDependencies": {
+		"webpack": "^5.110.3",
+		"webpack-cli": "^7.2.3"
+	},
+	"dependencies": {
+		"path": "^0.12.7"
+	}
+}
