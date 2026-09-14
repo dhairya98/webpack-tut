@@ -12,10 +12,14 @@
 	"author": "Dhairya Anchal",
 	"license": "ISC",
 	"devDependencies": {
+		"css-loader": "^7.1.5",
+		"sass-loader": "^17.0.1",
+		"style-loader": "^4.0.0",
 		"webpack": "^5.110.3",
 		"webpack-cli": "^7.2.3"
 	},
 	"dependencies": {
-		"path": "^0.12.7"
+		"path": "^0.12.7",
+		"sass": "^1.104.1"
 	}
 }
