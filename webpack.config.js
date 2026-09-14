@@ -1,5 +1,6 @@
 const path = require("path");
 const Htmlplugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
 	// Entry and output
@@ -28,6 +29,14 @@ module.exports = {
 			template: "./newtest.html",
 			chunks: ["newIndex"],
 			filename: "newIndex.html",
+		}),
+		new CopyPlugin({
+			patterns: [
+				{
+					from: path.resolve(__dirname, "fonts"),
+					to: path.resolve(__dirname, "dist/assets/fonts"),
+				},
+			],
 		}),
 	],
 

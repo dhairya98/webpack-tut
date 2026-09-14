@@ -12,6 +12,7 @@
 	"author": "Dhairya Anchal",
 	"license": "ISC",
 	"devDependencies": {
+		"copy-webpack-plugin": "^14.0.0",
 		"css-loader": "^7.1.5",
 		"html-webpack-plugin": "^5.6.8",
 		"sass-loader": "^17.0.1",
