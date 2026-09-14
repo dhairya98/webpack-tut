@@ -1,8 +1,10 @@
 const path = require("path");
+const glob = require("glob");
 const Htmlplugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CSSMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
 
 module.exports = {
 	// Entry and output
@@ -53,6 +55,9 @@ module.exports = {
 		}),
 		new MiniCssExtractPlugin({
 			filename: "[name][contenthash].css",
+		}),
+		new PurgeCSSPlugin({
+			paths: glob.sync(path.join(__dirname, "*.{js,html}")),
 		}),
 	],
 
