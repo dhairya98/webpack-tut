@@ -2,6 +2,7 @@ const path = require("path");
 const Htmlplugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CSSMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
 	// Entry and output
@@ -24,6 +25,10 @@ module.exports = {
 		port: 3000,
 		open: true,
 		hot: true,
+	},
+
+	optimization: {
+		minimizer: [new CSSMinimizerPlugin()],
 	},
 
 	// Plugin
